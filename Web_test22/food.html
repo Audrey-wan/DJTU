@@ -1,0 +1,599 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>甜蜜约会</title>
+		<style type="text/css">
+			
+			/* CSS Document */
+			
+			* {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				outline: none;
+				border: 0;
+				background: none;
+			}
+			
+			body {
+				font-size: 14px;
+				font-family: "微软雅黑";
+			}
+			
+			a:link,
+			a:visited {
+				color: #fff;
+				text-decoration: none;
+			}
+			
+			a:hover {
+				text-decoration: none;
+			}
+			/*head*/
+			
+			.head {
+				width: 980px;
+				margin: 0 auto;
+				height: 50px;
+				padding-top: 30px;
+			}
+			
+			.head .left {
+				float: left;
+			}
+			
+			.head .right {
+				float: right;
+			}
+			/*nav*/
+			
+			#nav {
+				width: 100%;
+				background: #000;
+			}
+			
+			.nav {
+				width: 980px;
+				height: 35px;
+				line-height: 35px;
+				margin: 0 auto;
+				text-align: center;
+				font-size: 14px;
+			}
+			
+			.nav li {
+				float: left;
+			}
+			
+			.nav a {
+				display: inline-block;
+				padding: 0 40px;
+			}
+			
+			.nav a:hover {
+				background: #e3da35;
+			}
+			
+			.nav .color_in {
+				background: #e3da35;
+			}
+			/*banner*/
+			
+			.banner {
+				width: 100%;
+				height: 580px;
+				position: relative;
+				overflow: hidden;
+			}
+			
+			.one {
+				position: absolute;
+				left: 50%;
+				top: 0;
+				margin-left: -960px;
+			}
+			
+			.banner .banner_pic .pic {
+				display: none;
+			}
+			
+			.banner .banner_pic .current {
+				display: block;
+			}
+			
+			.banner ol {
+				position: absolute;
+				left: 50%;
+				top: 90%;
+				margin-left: -62px;
+			}
+			
+			.banner ol .but {
+				float: left;
+				width: 28px;
+				height: 1px;
+				border: 1px solid #d6d6d6;
+				margin-right: 20px;
+			}
+			
+			.banner ol li {
+				cursor: pointer;
+			}
+			
+			.banner ol .current {
+				background: #90d1d5;
+				float: left;
+				width: 28px;
+				height: 1px;
+				border: 1px solid #90d1d5;
+				margin-right: 20px;
+			}
+			/*简介*/
+			
+			#learn {
+				width: 980px;
+				margin: 0 auto;
+			}
+			
+			h2 {
+				font-weight: 100;
+				font-size: 24px;
+				color: #585858;
+				padding: 40px 0;
+				border-bottom: 7px solid #ececec;
+			}
+			
+			#learn dl {
+				width: 980px;
+				height: 220px;
+			}
+			
+			#learn dt {
+				width: 145px;
+				height: 220px;
+				background: url(img/learn.jpg) center center no-repeat;
+				float: left;
+			}
+			
+			#learn dd {
+				width: 780px;
+				padding: 20px 0 0 30px;
+				float: left;
+			}
+			
+			#learn .txt1 {
+				font-size: 24px;
+				color: #e3da35;
+			}
+			
+			#learn .txt2 {
+				color: #6b6862;
+				line-height: 24px;
+			}
+			/*展示*/
+			
+			.imgbox {
+				width: 940px;
+				padding: 0 20px;
+				white-space: nowrap;
+				overflow: hidden;
+			}
+			
+			.imgbox img {
+				width: 226px;
+				height: 129px;
+				padding: 2px;
+			}
+			
+			.imgbox a {
+				margin-right: 20px;
+			}
+			/*特色*/
+			
+			#features {
+				width: 980px;
+				height: 565px;
+				margin: 0 auto;
+			}
+			/* Table切换 */
+			
+			.list0 {
+				width: 638px;
+				margin-top: 25px;
+				float: left;
+				position: relative;
+			}
+			
+			#SwitchBigPic {
+				border: 1px solid #ddd;
+			}
+			
+			#SwitchBigPic span {
+				display: none;
+			}
+			
+			#SwitchBigPic img {
+				width: 448px;
+				height: 375px;
+			}
+			
+			#SwitchBigPic .sp {
+				display: block;
+			}
+			
+			#SwitchNav {
+				width: 190px;
+				position: absolute;
+				top: 0px;
+				left: 447px;
+			}
+			
+			#SwitchNav li {
+				width: 190px;
+				height: 125px;
+				margin-bottom: 1px;
+			}
+			
+			#SwitchNav a {
+				display: block;
+				width: 190px;
+				height: 125px;
+				background: url(img/txt_111_1.jpg) no-repeat;
+			}
+			
+			#SwitchNav .txt_img2 {
+				background: url(img/txt_222_2.jpg) no-repeat;
+			}
+			
+			#SwitchNav .txt_img3 {
+				background: url(img/txt_333_3.jpg) no-repeat;
+			}
+			
+			#SwitchNav .txt_img1:hover {
+				background: url(img/txt_111.jpg) no-repeat;
+			}
+			
+			#SwitchNav .txt_img2:hover {
+				background: url(img/txt_222.jpg) no-repeat;
+			}
+			
+			#SwitchNav .txt_img3:hover {
+				background: url(img/txt_333.jpg) no-repeat;
+			}
+			/*列表*/
+			
+			.list1 {
+				width: 326px;
+				height: 375px;
+				float: right;
+				margin-top: 25px;
+			}
+			
+			.list1 h3 {
+				width: 326px;
+				height: 74px;
+				background: url(img/zhuce.jpg) no-repeat;
+			}
+			
+			.list1 .biaodan {
+				width: 326px;
+				height: 200px;
+			}
+			
+			.left {
+				width: 80px;
+				text-align: right;
+				font-size: 18px;
+			}
+			
+			tr {
+				height: 50px;
+			}
+			
+			td {
+				text-align: center;
+			}
+			/*表单*/
+			
+			input {
+				width: 204px;
+				height: 28px;
+				border: 1px solid #d2d2d2;
+			}
+			
+			.course {
+				width: 204px;
+				height: 28px;
+				border: 1px solid #d2d2d2;
+				padding: 3px 0;
+			}
+			
+			.no_border {
+				border: none;
+				width: 222px;
+				height: 53px;
+				background: url(img/btn.jpg) right top no-repeat;
+				margin-top: 30px;
+				cursor: pointer;
+			}
+			/*footer*/
+			
+			.footer {
+				width: 100%;
+				height: 60px;
+				line-height: 60px;
+				text-align: center;
+				background: #000;
+				color: #FFF;
+			}
+		</style>
+		<script type="text/javascript">
+			// JavaScript Document
+			//焦点图轮播
+			window.onload = function() {
+				//顶部的焦点图切换
+				function hotChange() {
+					var current_index = 0;
+					var timer = window.setInterval(autoChange, 3000);
+					var button_li = document.getElementById("button").getElementsByTagName("li");
+					var pic_li = document.getElementById("banner_pic").getElementsByTagName("li");
+					for(var i = 0; i < button_li.length; i++) {
+						button_li[i].onmouseover = function() {
+							if(timer) {
+								clearInterval(timer);
+							}
+							for(var j = 0; j < pic_li.length; j++) {
+								if(button_li[j] == this) {
+									current_index = j;
+									button_li[j].className = "current";
+									pic_li[j].className = "current";
+								} else {
+									pic_li[j].className = "pic";
+									button_li[j].className = "but";
+								}
+							}
+						}
+						button_li[i].onmouseout = function() {
+							timer = setInterval(autoChange, 3000);
+						}
+					}
+
+					function autoChange() {
+						++current_index;
+						if(current_index == button_li.length) {
+							current_index = 0;
+						}
+						for(var i = 0; i < button_li.length; i++) {
+							if(i == current_index) {
+								button_li[i].className = "current";
+								pic_li[i].className = "current";
+							} else {
+								button_li[i].className = "but";
+								pic_li[i].className = "pic";
+							}
+						}
+					}
+				}
+				hotChange();
+
+				//展示
+				function school() {
+					//定义滚动速度
+					var speed = 50;
+					//获取<div id="imgbox">元素
+					var imgbox = document.getElementById("imgbox");
+					//复制一个<span>，用于无缝滚动
+					imgbox.innerHTML += imgbox.innerHTML;
+					//获取两个<span>元素
+					var span = imgbox.getElementsByTagName("span");
+					//启动定时器，调用滚动函数
+					var timer1 = window.setInterval(marquee, speed);
+					//鼠标移入时暂停滚动，移出时继续滚动
+					imgbox.onmouseover = function() {
+						clearInterval(timer1);
+					}
+					imgbox.onmouseout = function() {
+						timer1 = setInterval(marquee, speed);
+					};
+					//滚动函数
+					function marquee() {
+						//当第1个<span>被完全卷出时
+						if(imgbox.scrollLeft > span[0].offsetWidth) {
+							//将被卷起的内容归0
+							imgbox.scrollLeft = 0;
+						} else {
+							//否则向左滚动
+							++imgbox.scrollLeft;
+						}
+					}
+				}
+				school();
+
+				function tableChange() {
+					//Table栏
+					//获得#SwitchNav中所有的<li>元素
+					var lis = document.getElementById("SwitchNav").getElementsByTagName("li");
+					//获得#SwitchBigPic中所有的<a>元素
+					var spans = document.getElementById("SwitchBigPic").getElementsByTagName("span");
+					//保存当前焦点元素的索引
+					var current_index = 0;
+					//启动定时器
+					var timer = setInterval(autoChange, 3000);
+					//遍历lis，为各<li>元素添加事件
+					for(var i = 0; i < lis.length; i++) {
+						//<li>的鼠标移入事件
+						lis[i].onmouseover = function() {
+							//定时器存在时清除定时器
+							if(timer) {
+								clearInterval(timer);
+							}
+							//遍历lis
+							for(var i = 0; i < lis.length; i++) {
+								//设置当前焦点元素的样式
+								if(lis[i] == this) {
+									spans[i].className = "sp";
+									//保存当前索引，当恢复自动切换时继续切换
+									current_index = i;
+									//设置非当前焦点元素的样式
+								} else {
+									spans[i].className = "";
+								}
+							}
+						}
+						//<li>的鼠标移出事件
+						lis[i].onmouseout = function() {
+							//启动定时器，恢复图片自动切换
+							timer = setInterval(autoChange, 3000);
+						}
+					}
+					//定时器周期函数-图片自动切换
+					function autoChange() {
+						//自增索引
+						++current_index;
+						//当索引自增达到上限时，索引归0
+						if(current_index == lis.length) {
+							current_index = 0;
+						}
+						//遍历lis，将所有元素取消焦点样式
+						for(var i = 0; i < lis.length; i++) {
+							spans[i].className = "";
+						}
+						//为当前索引元素添加焦点样式
+						spans[current_index].className = "sp";
+					}
+				}
+				tableChange();
+			}
+		</script>
+	</head>
+
+	<body>
+		<!-- head begin-->
+		<div class="head">
+			<div class="left"><img src="img/logo.png" /></div>
+			<div class="right"><img src="img/phone.jpg" /></div>
+		</div>
+		<!-- head end-->
+		<!-- nav begin-->
+		<div id="nav">
+			<ul class="nav">
+				<li>
+					<a href="#" class="color_in">首页</a>
+				</li>
+				<li>
+					<a href="#">港式甜品</a>
+				</li>
+				<li>
+					<a href="#">台式甜品</a>
+				</li>
+				<li>
+					<a href="#">植物甜品</a>
+				</li>
+				<li>
+					<a href="#">广府糖水</a>
+				</li>
+				<li>
+					<a href="#">加盟我们</a>
+				</li>
+				<li>
+					<a href="#">分店地址</a>
+				</li>
+			</ul>
+		</div>
+		<!-- nav end-->
+		<!-- banner begin-->
+		<div class="banner">
+			<ul class="banner_pic" id="banner_pic">
+				<li class="current"><img class="one" src="img/01.jpg" /></li>
+				<li class="pic"><img class="one" src="img/02.jpg" /></li>
+				<li class="pic"><img class="one" src="img/03.jpg" /></li>
+			</ul>
+			<ol id="button">
+				<li class="current"></li>
+				<li class="but"></li>
+				<li class="but"></li>
+			</ol>
+		</div>
+		<!-- banner end-->
+		<!-- learn begin-->
+		<div id="learn">
+			<h2>甜蜜约会品牌简介</h2>
+			<dl>
+				<dt></dt>
+				<dd class="txt1">想和甜蜜有个约会吗？</dd>
+				<dd class="txt2">甜品不仅女孩子喜欢，很多男孩子也不例外，在人们越来越会享受生活的今天，甜品品牌发展的可谓风生水起，“甜蜜约会”就是其中一个。1995年，“甜蜜约会”的创始人在西贡区创办了首家港式甜品店，凭借着甜品细腻的口感和独特的风味，获得了很多消费者的青睐。以创新、品质、价格作为营销系理念，“甜蜜约会”很快“俘获”了一大批忠实粉丝，并在2002年于新港中心开设了分店。到2020年，“甜蜜约会”更是在北京、上海、杭州、苏州、珠海、湖南、广州等地区开设了60多家特许经营店，这样的成绩着实耀眼。</dd>
+			</dl>
+			<div class="imgbox" id="imgbox">
+				<span>
+             <a href="#"><img src="img/1.jpg" /></a>
+             <a href="#"><img src="img/2.jpg" /></a>
+             <a href="#"><img src="img/3.jpg" /></a>
+             <a href="#"><img src="img/4.jpg" /></a>
+         </span>
+			</div>
+		</div>
+		<!-- learn end-->
+		<!-- features begin-->
+		<div id="features">
+			<h2>甜蜜约会特色美食推荐</h2>
+			<div class="list0">
+				<div id="SwitchBigPic">
+					<span class="sp"><a href="#"><img src="img/111.jpg" /></a></span>
+					<span><a href="#"><img src="img/222.jpg" /></a></span>
+					<span><a href="#"><img src="img/333.jpg" /></a></span>
+				</div>
+				<ul id="SwitchNav">
+					<li>
+						<a class="txt_img1" href="#"></a>
+					</li>
+					<li>
+						<a class="txt_img2" href="#"></a>
+					</li>
+					<li>
+						<a class="txt_img3" href="#"></a>
+					</li>
+				</ul>
+			</div>
+			<div class="list1">
+				<h3></h3>
+				<form action="#" method="post" class="biaodan">
+					<table class="content">
+						<tr>
+							<td class="left">姓名：</td>
+							<td><input type="text" class="txt01" /></td>
+						</tr>
+						<tr>
+							<td class="left">手机：</td>
+							<td><input type="text" class="txt01" /></td>
+						</tr>
+						<tr>
+							<td class="left">邮箱：</td>
+							<td><input type="text" class="txt01" /></td>
+						</tr>
+						<tr>
+							<td class="left">店址：</td>
+							<td>
+								<select class="course">
+									<option>请选择最近的店铺地址</option>
+									<option>北京三里屯12号</option>
+									<option>上海南京路3号</option>
+									<option>广州淮阳路12号</option>
+									<option>深圳大都会3号</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><input class="no_border" type="button" /></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+		<!-- features end-->
+		<!-- footer begin-->
+		<div class="footer">甜蜜约会版权所有2020-2036京ICP备2232333号&nbsp;&nbsp;京公网安备2342434324343</div>
+		<!-- footer end-->
+	</body>
+
+</html>
