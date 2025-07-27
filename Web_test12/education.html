@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+    	/*重置页面布局*/
+    	*{
+   			 margin:0;
+   			 padding:0;
+   			 list-style:none;
+		}
+		/*全局控制*/
+		body{
+  			  background:#fff9ed;
+  			  font-family:"微软雅黑";
+  			  font-size:14px;
+		}
+		a:link,a:visited{
+    		text-decoration:none;
+    		color:#fff;
+    		font-size:14px;
+		}
+		/*导航模块CSS*/
+		#upper{
+   			width:100%;
+   			height:128px;
+    		background:url(img/head_bg.jpg) repeat-x;
+    		border-bottom:3px solid #d5d5d5;
+		}
+		.uppertext{
+    		width:980px;
+    		margin:0 auto;
+		}
+ 
+		li{
+  			  float:left;
+		}
+ 
+		li a{
+    		display:inline-block;
+   			height:90px;
+    		width:119px;
+   		 	text-align:center;
+    		line-height:70px;
+		}
+		li a:hover{
+    		background:url(img/xuanfu.png) center center;
+		}
+		/*banner模块及课程分类模块CSS*/
+		#middle{
+    		width:980px;
+    		margin:0 auto;
+		}
+ 
+		.style_bg{
+    		width:908px;
+    		height:330px;
+    		background:#6dbf2d;
+   		 	padding:10px 36px 5px;
+		}
+ 
+		.style{
+    		width:895px;
+    		height:314px;
+    		background:#fff;
+    		padding:8px 10px 8px 6px;
+		}
+ 
+		.style dl{
+   			width:279px;
+    		height:315px;
+    		float:left;
+    		margin-left:4px;
+		}
+ 
+		.style .third{
+    		width:322px;
+		}
+ 
+		.style dt,.style dd{
+    		float:left;
+		}
+ 
+		.style .left1,.style .left3,.style .center1,.style .center3{
+  			width:162px;
+		}
+ 
+		.style .left2,.style .left4,.style .center2,.style .center4,.style .right2{
+    		width:117px;
+		}
+ 
+		.style .left1,.style .left2,.style .center1,.style .center2{
+   			 margin-bottom:8px;
+		}
+ 
+		.style .left1{
+   			 height:170px;
+   			 background:url(img/pic01.jpg) no-repeat;
+		}
+ 
+		.style .left2{
+   		 	height:160px;
+    		line-height:170px;
+		}
+ 
+		.style .left3{
+    		height:137px;
+    		background:url(img/pic02.jpg) no-repeat;
+		}
+ 
+		.style .left4{
+   			height:137px;
+    		line-height:137px;
+		}
+ 
+		.style .center1{
+    		height:117px;
+    		background:url(img/pic03.jpg) no-repeat;
+		}
+ 
+		.style .center2{
+    		height:117px;
+    		line-height:117px;
+		}
+ 
+		.style .center3{
+    		height:188px;
+    		background:url(img/pic04.jpg) no-repeat;
+		}
+ 
+		.style .center4{
+    		height:188px;
+    		line-height:188px;
+		}
+ 
+		.style .right1{
+    		width:200px;
+    		height:314px;
+    		background:url(img/pic05.jpg) no-repeat;
+		}
+ 
+		.style .right2{
+    		height:314px;
+    		line-height:314px;
+		}
+ 
+		.style a{
+    		display:block;
+    		background:#f2f2f2;
+    		text-align:center;
+    		color:#333;
+		}
+ 
+		.style a:hover{
+   			background:#6dbf2d;
+		}
+		
+		/*精品展示模块CSS*/
+		h2{
+   			width:260px;
+    		height:45px;
+    		background:#6bdf2d;
+    		font-size:20px;
+    		font-weight:100;
+    		line-height:45px;
+    		text-align:center;
+    		color:#fff;
+    		margin-top:80px;
+		}
+		.lower{
+   			width:950px;
+    		height:340px;
+    		background:#fff;
+    		border:1px solid #dcd2ba;
+    		padding:12px 0 0 20px;
+		}
+		.lower dl{
+    		width:230px;
+    		height:330px;
+    		border:1px solid #dcd2ba;
+    		float:left;
+    		margin-right:5px;
+		}
+		.lower dt{
+    		width:230px;
+    		height:210px;
+    		border-bottom:1px solid #dcd2bA;
+		}
+		.lower01{
+    		width:230px;
+    		height:65px;
+    		background:#fff;
+    		line-height:65px;
+    		color:#7a7a7a;
+    		font-size:24px;
+    		text-align:center;
+		}
+		.lower02{
+    		width:140px;
+    		height:35px;
+    		background:#6dbf2b url(img/gouwu.jpg) left center no-repeat;
+    		margin:0 15px;
+    		line-height:40px;
+    		padding-left:60px;
+    		color:white;
+		}
+		.match1{
+    		background:url(img/match01.jpg) no-repeat;
+		}
+		.match2{
+   			background:url(img/match02.jpg) no-repeat;
+		}
+		.match3{
+    		background:url(img/match03.jpg) no-repeat;
+		}
+		.match4{
+    		background:url(img/match04.jpg)  no-repeat;
+		}
+		.lower a{
+    		display:inline-block;
+    		width:180px;
+    		height:40px;
+		}
+		
+		/*页脚模块CSS*/
+		#foot{
+    		width:100%;
+    		height:100px;
+    		background:#020202;
+    		color:white;
+    		line-height:25px;
+    		text-align:center;
+    		padding-top:50px;
+    		margin-top:65px;
+		}
+    </style>
+</head>
+<body>
+	
+	<!--导航模块-->
+    <div id="upper">
+        <ul class="uppertext">
+            <li class="loge"><img src="img/logo.png"/></li>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">学校介绍</a></li>
+            <li><a href="#">课程介绍</a></li>
+            <li><a href="#">师资力量</a></li>
+            <li><a href="#">招生问答</a></li>
+            <li><a href="#">教学活动</a></li>
+        </ul>
+    </div>
+    
+    <!--banner模块-->
+    <div id="middle">
+        <div class="banner">
+            <img src="img/banner.jpg"/>
+    </div>
+        
+    <!--课程分类模块-->
+    <div class="style_bg">
+            <div class="style">
+                <dl>
+                    <dt class="left1"></dt><dd class="left2">大学专区</a></dd>
+                    <dt class="left3"></dt><dd class="left4">求职专区</a></dd>
+                </dl>
+                <dl>
+                    <dt class="center1"></dt><dd class="center2">高中专区</a></dd>
+                    <dt class="center3"></dt><dd class="center4">考证专区</a></dd>
+                </dl>
+                <dl class="third">
+                    <dt class="right1"></dt><dd class="right2">线上精品课专区</a></dd>
+                </dl>
+            </div>
+      </div>
+      
+      <!--精品展示-->
+      <h2>热门课程</h2>
+      <div class="lower">
+            <dl>
+                <dt class="match1"></dt>
+                <dd class="lower01">软件工程师课程</dd>
+                <dd class="lower02"><a class="three">高级IT人才的捷径</a></dd>
+            </dl>
+            <dl>
+                <dt class="match2"></dt>
+                <dd class="lower01">Java课程</dd>
+                <dd class="lower02"><a class="three">工程师必修课</a></dd>
+            </dl>
+            <dl>
+                <dt class="match3"></dt>
+                <dd class="lower01">Python课程</dd>
+                <dd class="lower02"><a class="three">热门行业新趋势</a></dd>
+            </dl>
+            <dl>
+                <dt class="match4"></dt>
+                <dd class="lower01">UI设计课程</dd>
+                <dd class="lower02"><a class="three">设计师必修课程</a></dd>
+            </dl>
+      </div>
+    </div>
+    
+    <!--页脚模块-->
+    <div id="foot">
+        <p>Copyright © 2022-2030 Edu.com,All rights reserved.</p>
+        <p>2020-2030,版权所有 优客网 00CP备 222222222</p>
+    </div>
+</body>
+</html>
